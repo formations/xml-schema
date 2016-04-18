@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<library xmlns="urn:unige:cui:library:2016"
+    xmlns:b="urn:unige:cui:library:book:2016"
+    xmlns:u="urn:unige:cui:library:user:2016">
+  <id>BibliothequeCUI</id>
+  <book>
+    <b:isbn>9780749717100</b:isbn>
+    <b:name>Of Mice and Men</b:name>
+    <b:author>John Steinbeck</b:author>
+    <b:publicationDate>1993-09-01</b:publicationDate>
+    <b:description><![CDATA[A controversial tale of friendship and tragedy during the Great Depression
+They are an unlikely pair: George is "small and quick and dark of face"; Lennie, a man of tremendous size, has the mind of a young child. Yet they have formed a "family," clinging together in the face of loneliness and alienation.
+Laborers in California's dusty vegetable fields, they hustle work when they can, living a hand-to-mouth existence. For George and Lennie have a plan: to own an acre of land and a shack they can call their own. When they land jobs on a ranch in the Salinas Valley, the fulfillment of their dream seems to be within their grasp. But even George cannot guard Lennie from the provocations of a flirtatious woman, nor predict the consequences of Lennie's unswerving obedience to the things George taught him.
+"A thriller, a gripping tale . . . that you will not set down until it is finished. Steinbeck has touched the quick." —The New York Times]]></b:description>
+    <b:format>paperback</b:format>
+  </book>
+  <user>
+    <u:id>ctardy</u:id>
+    <u:firstName>Camille</u:firstName>
+    <u:lastName>Tardy</u:lastName>
+  </user>
+</library>
