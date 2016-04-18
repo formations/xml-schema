@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schema targetNamespace="urn:unige:cui:library:book:2016"
+    xmlns:tns="urn:unige:cui:library:book:2016"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+  <complexType name="bookType">
+    <all>
+      <element name="isbn" type="tns:isbnType"/>
+      <element name="name" type="string"/>
+      <element name="author" type="string" minOccurs="0"/>
+      <element name="publicationDate" type="date" minOccurs="0"/>
+      <element name="description" type="string" minOccurs="0"/>
+      <element name="publisher" type="string" minOccurs="0"/>
+      <element name="format" type="tns:formatType"/>
+    </all>
+  </complexType>
+  <simpleType name="isbnType">
+    <restriction base="string">
+      <pattern value="[0-9]{13}"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="formatType">
+    <restriction base="string">
+      <enumeration value="ebook"/>
+      <enumeration value="paperback"/>
+      <enumeration value="hardcover"/>
+    </restriction>
+  </simpleType>
+  <element name="book" type="tns:bookType"/>
+</schema>

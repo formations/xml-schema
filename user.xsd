@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema targetNamespace="urn:unige:cui:library:user:2016"
+    xmlns:tns="urn:unige:cui:library:user:2016"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+  <complexType name="userType">
+    <all>
+      <element name="id" type="ID"/>
+      <element name="firstName" type="string" />
+      <element name="lastName" type="string" />
+    </all>
+  </complexType>
+  <element name="user" type="tns:userType" />
+</schema>
