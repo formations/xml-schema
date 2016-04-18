@@ -1,0 +1,57 @@
+= Travaux pratiques XML - XML Schéma
+Nicolas Frankel
+:doctype: article
+:encoding: utf-8
+:lang: fr
+:toc:
+:toc-placement!:
+:sectanchors:
+:numbered:
+:experimental:
+:imagesdir: images
+
+image::https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png[Licence Creative Commons, link="http://creativecommons.org/licenses/by-nc-sa/4.0/"]
+
+Ce cours est mis à disposition selon les termes de la http://creativecommons.org/licenses/by-nc-sa/4.0/[Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International].
+
+toc::[]
+
+== Références
+
+* Spécification du W3C pour l'https://www.w3.org/XML/:[Extensible Markup Language] [EN]
+* Spécification du W3C pour les https://www.w3.org/XML/Schema:[XML schemas] [EN]
+* http://www.utilities-online.info/xsdvalidation/:[Outil] de validation XML/XML schema
+
+== Récupération des sources
+
+Pour disposer des sources, deux possibilités existent :
+
+1. Soit utiliser _git_ :
++
+[source, bash]
+----
+git clone git@github.com:formations/xml-schema.git
+----
+2. Ou bien télécharger https://github.com/formations/xml-schema/archive/master.zip[l'archive] puis la décompresser.
+
+== Travail à réaliser
+
+Le travail consiste à modéliser un domaine métier d'une bibliothèque. Celui-ci est constitué des trois entités suivantes :
+
+1. `user`
+2. `book`
+3. `library`
+
+Voici une vue détaillées des entités :
+
+image::class-diagram.png[Diagramme de classes]
+
+Dans un premier temps, créer un fichier XML exemple pour les entités `user` et `book` dans les espaces de noms respectifs `urn:unige:cui:library:user:2016` et `urn:unige:cui:library:book:2016`.
+
+Dans un second temps, créer un schéma XML dédié pour chaque entité avec l'espace de nom adéquat.
+
+Vérifier que le schéma valide bien les fichiers XML ainsi créés.
+
+La troisième et dernière étape consiste à créer un fichier XML exemple pour l'entité `library`. Valider également ce fichier. 
+
+

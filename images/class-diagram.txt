@@ -1,0 +1,40 @@
+package "urn:unige:cui:library:book:2016" {
+
+ class book {
+  isbn: isbnType [1]
+  name: string [1]
+  author: string [1-*]
+  publicationDate: date [1]
+  description: string [0-1]
+  publisher: string [0-1]
+ }
+
+ note top of book: isbn should be\nexactly 13 digits 
+
+ enum formatType {
+  ebook
+  paperback
+  hardcover
+ }
+}
+
+package "urn:unige:cui:library:user:2016" {
+ class user {
+  id: ID [1]
+  firstName: string [1]
+  lastName: string [1]
+ }
+}
+
+package "urn:unige:cui:library:2016" {
+ class library {
+  id: ID [1]
+ }
+}
+
+book -up-> "[1]" formatType: format
+library -up-> "[*]" user
+library -up-> "[*]" book
+
+hide empty attributes
+hide empty methods
