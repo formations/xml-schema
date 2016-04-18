@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<schema targetNamespace="urn:unige:cui:library:2016"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="urn:unige:cui:library:2016"
+    xmlns:b="urn:unige:cui:library:book:2016"
+    xmlns:u="urn:unige:cui:library:user:2016"
+    elementFormDefault="qualified">
+  <import schemaLocation="book.xsd" namespace="urn:unige:cui:library:book:2016"/>
+  <import schemaLocation="user.xsd" namespace="urn:unige:cui:library:user:2016"/>
+  <complexType name="libraryType">
+    <sequence>
+      <element name="id" type="ID"/>
+      <element name="book" type="b:bookType" minOccurs="0" maxOccurs="unbounded"/>
+      <element name="user" type="u:userType" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <element name="library" type="tns:libraryType" />
+</schema>

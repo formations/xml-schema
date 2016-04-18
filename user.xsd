@@ -10,5 +10,4 @@
       <element name="lastName" type="string" />
     </all>
   </complexType>
-  <element name="user" type="tns:userType" />
 </schema>

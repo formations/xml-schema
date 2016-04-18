@@ -26,5 +26,4 @@
       <enumeration value="hardcover"/>
     </restriction>
   </simpleType>
-  <element name="book" type="tns:bookType"/>
 </schema>
