@@ -18,9 +18,9 @@ toc::[]
 
 == Références
 
-* Spécification du W3C pour l'https://www.w3.org/XML/:[Extensible Markup Language] [EN]
-* Spécification du W3C pour les https://www.w3.org/XML/Schema:[XML schemas] [EN]
-* http://www.utilities-online.info/xsdvalidation/:[Outil] de validation XML/XML schema
+* Spécification du W3C pour l'https://www.w3.org/XML/[Extensible Markup Language] [EN]
+* Spécification du W3C pour les https://www.w3.org/XML/Schema[XML schemas] [EN]
+* http://www.freeformatter.com/xml-validator-xsd.html[Outil] de validation XML/XML schema
 
 == Récupération des sources
 
